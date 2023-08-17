@@ -474,6 +474,7 @@ header .container {
 
 .portfolio-list-table {
   width: calc((100% - 48px) / 3);
+  transition: 250ms ease;
 }
 
 .section-fifth-h-second {
@@ -590,6 +591,12 @@ footer .container {
   fill: #f4f4fd;
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -597,30 +604,30 @@ footer .container {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.7);
+  transition: transform 250ms ease-in opacity 250ms ease-out;
   transition: opacity 250ms ease-out, visibility 250ms ease-out;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
 .modal {
   width: 408px;
   height: 584px;
+
   border-radius: 4px;
   background: var(--dairy, #fcfcfc);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translateX(-50%) translateY(-50%);
-  /* transition: transform 250ms ease-in opacity 250ms ease-in; */
+  opacity: 1;
 }
 
 .backdrop.is-hidden .modal {
   transform: translateX(-50%) translateY(-70%);
+  opacity: 0;
 }
 
 .modal-btn {
@@ -632,4 +639,50 @@ footer .container {
   justify-content: center;
   padding: 0;
   background-color: transparent;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 300ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--iris, #4d5ae5);
+}
+
+.overlay-text {
+  color: var(--cloud, #f4f4fd);
+  /* Body */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  width: 296px;
+  height: 96px;
+}
+
+.portfolio-table-ani {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-table-ani:hover .overlay {
+  transform: translateY(0);
+}
+
+.portfolio-list-table:hover {
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }

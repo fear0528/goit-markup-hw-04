@@ -27,6 +27,7 @@ p {
 }
 ul,
 ol {
+  list-style-type: none;
   padding-left: 0;
   margin: 0;
 }
@@ -547,7 +548,7 @@ header .container {
   background-color: var(--primary-brand-color);
   transition: background-color 250ms ease;
 }
-.customers-list-container {
+.customers-list-logos {
   display: flex;
   width: 100%;
   gap: 24px;
@@ -576,7 +577,7 @@ header .container {
   gap: 16px;
 }
 
-.footer-social-media-icons {
+.footer-icons-list {
   display: flex;
   gap: 16px;
 }

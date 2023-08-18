@@ -167,10 +167,10 @@ body {
   color: var(--dark-color);
 }
 
-.list p {
+/* .list p {
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
+} */
 
 .section-third-h-second {
   font-size: 36px;
@@ -698,6 +698,8 @@ footer .container {
 }
 
 .overlay-text {
+  display: flex;
+  align-items: flex-start;
   color: var(--cloud, #f4f4fd);
   font-family: Roboto;
   font-size: 16px;
@@ -705,8 +707,9 @@ footer .container {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
-  width: 296px;
-  height: 96px;
+  padding: 40px 32px;
+  /* width: 296px;
+  height: 96px; */
 }
 
 .portfolio-table-ani {

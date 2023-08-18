@@ -51,7 +51,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--pressed-state-color);
-  margin-right: 76px;
+  margin-right: 76px; 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -514,7 +514,7 @@ header .container {
   align-items: center;
 }
 
-.social-media-list {
+.social-media-container-list {
   display: flex;
   width: 100%;
   gap: 24px;

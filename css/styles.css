@@ -656,7 +656,7 @@ footer .container {
 
 .modal {
   width: 408px;
-  height: 584px;
+  min-height: 584px;
 
   border-radius: 4px;
   background: var(--dairy, #fcfcfc);
@@ -669,6 +669,7 @@ footer .container {
 
   transform: translateX(-50%) translateY(-50%);
   opacity: 1;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
@@ -698,6 +699,7 @@ footer .container {
 .modal-btn:focus {
   background-color: var(--pressed-state-color);
   fill: #ffffff;
+  border: none;
 }
 
 .modal-btn-icon {

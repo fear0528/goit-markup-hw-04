@@ -513,10 +513,6 @@ header .container {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-table:hover,
-.portfolio-list-table:focus {
-}
-
 .section-fifth-h-second {
   color: var(--dark-color);
   line-height: 1.11;
@@ -745,12 +741,16 @@ footer .container {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-table-ani:hover .overlay,
+.portfolio-table-ani:hover .overlay {
+  transform: translateY(0);
+}
+
 .portfolio-table-ani:focus .overlay {
   transform: translateY(0);
 }
 
-.portfolio-list-table:hover {
+.portfolio-list-table:hover,
+.portfolio-list-table:focus {
   background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),

@@ -734,6 +734,7 @@ footer .container {
   line-height: 24px;
   letter-spacing: 0.32px;
   padding: 40px 32px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* width: 296px;
   height: 96px; */
 }
@@ -741,9 +742,11 @@ footer .container {
 .portfolio-table-ani {
   position: relative;
   overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-table-ani:hover .overlay {
+.portfolio-table-ani:hover .overlay,
+.portfolio-table-ani:focus .overlay {
   transform: translateY(0);
 }
 

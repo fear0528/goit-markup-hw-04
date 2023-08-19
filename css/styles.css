@@ -68,8 +68,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .link {
   text-decoration: none;
+  display: block;
+
 }
 
 .menu-list-item {
@@ -752,7 +755,7 @@ footer .container {
 
 .portfolio-list-table:hover,
 .portfolio-list-table:focus {
-  background: var(--white, #fff);
+  /* background: var(--white, #fff); */
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -808,7 +811,7 @@ footer .container {
 }
 
 .portfolio-card {
-  display: block;
+  /* display: block; */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
